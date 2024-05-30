@@ -1,6 +1,5 @@
 ## PNPM workspace peer dependencies bug scenario
-The PNPM currently has a bug that the packages managed by the pnpm workspace doesn't declare its peer dependencies like a published library.
-This issue make impossible to use peer dependencies between workspace packages.
+The packages managed by the pnpm workspace don't declare its peer dependencies in the lockfile like a published library. This issue make impossible to use peer dependencies in the managed pnpm workspace packages.
 
 ### Use case
 The `packages/package-a` has declared `zod` as peer dependency
