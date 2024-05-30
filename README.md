@@ -30,6 +30,7 @@ It was expected the `package-a` to not break as the `package-b` should use the `
 
 ## How to reproduce
 ```bash
+nvm install # install the node version
 nvm use # use the node version
 
 corepack enable # enables the corepack
