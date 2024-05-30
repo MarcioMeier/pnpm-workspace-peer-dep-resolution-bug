@@ -5,7 +5,7 @@
     "declaration": true,
     "declarationMap": true,
     "lib": ["ESNext"],
-    "outDir": "dist",
+    "outDir": "dist"
   },
   "include": ["index.ts"],
   "exclude": ["node_modules"]
