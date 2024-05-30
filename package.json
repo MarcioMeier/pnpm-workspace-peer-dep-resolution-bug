@@ -1,0 +1,19 @@
+{
+  "name": "pnpm-peerdep-bug",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "npm": "<0",
+    "node": "20.x",
+    "yarn": "<0",
+    "pnpm": "=9.1.4"
+  },
+  "packageManager": "pnpm@9.1.4",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
