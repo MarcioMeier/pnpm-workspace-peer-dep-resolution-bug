@@ -10,12 +10,9 @@ importers:
 
   packages/package-a:
     dependencies:
-      package-b:
-        specifier: workspace:*
-        version: link:../package-b
       zod:
-        specifier: 3.22.4
-        version: 3.22.4
+        specifier: ^3.23.8
+        version: 3.23.8
     devDependencies:
       '@tsconfig/node16':
         specifier: ^16.1.3
@@ -26,9 +23,12 @@ importers:
 
   packages/package-b:
     dependencies:
+      package-a:
+        specifier: workspace:*
+        version: link:../package-a
       zod:
-        specifier: ^3.23.8
-        version: 3.23.8
+        specifier: 3.22.4
+        version: 3.22.4
     devDependencies:
       '@tsconfig/node16':
         specifier: ^16.1.3

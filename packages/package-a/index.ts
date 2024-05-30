@@ -1,5 +1,8 @@
 import z from 'zod';
-import { schemaValidatorBuilder } from 'package-b';
+
+export const schemaValidatorBuilder = (schema: z.ZodSchema) => (data: any) => {
+  return schema.parse(data);
+};
 
 const schema = z.object({
   name: z.string(),
